@@ -1,0 +1,8 @@
+{
+  "name": "Exotel Call Details Fetcher",
+  "author": "Vinoj Raj",
+  "version": "1.0.0",
+  "supportedFieldTypes": ["text"],
+  "hideDefaultRequiredMessage": false,
+	"hideDefaultConstraintMessage": false
+}
