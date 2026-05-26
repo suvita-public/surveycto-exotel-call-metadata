@@ -267,9 +267,3 @@ For bugs or feature requests, open an issue on GitHub.
 
 MIT License. See [LICENSE](LICENSE) for details.
 
----
-
-## Built by
-
-Built by the Tech Team at [Suvita](https://suvita.org) (subscriptions@suvita.org).
-Suvita is a public health organization working on maternal and child health in India.
