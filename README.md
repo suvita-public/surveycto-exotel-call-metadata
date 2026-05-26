@@ -60,7 +60,7 @@ Both fields must be present in the same form, and all survey questions asked dur
 - Returns structured JSON output stored directly in the SurveyCTO field - ready for publishing, exports, or downstream analysis
 - Consistent error handling - API failures and missing data are returned in the same JSON structure as successful responses, so downstream parsing never breaks
 - Button is disabled while the API call is in flight to prevent duplicate requests
-- Works on SurveyCTO Collect (Android). **Does not work on web forms** due to browser CORS restrictions on direct Exotel API calls.
+- Works on SurveyCTO Collect. **Does not work on web forms** due to browser CORS restrictions on direct Exotel API calls.
 
 ---
 
@@ -71,7 +71,7 @@ Both fields must be present in the same form, and all survey questions asked dur
 - An active [Exotel](https://exotel.com) account with API access
 - Your Exotel API key, API token, and Account SID (see [Credentials](#exotel-api-credentials) below)
 - A SurveyCTO form that already uses an Exotel dialer field plug-in in an earlier field
-- SurveyCTO Collect **version 2.70.2 or higher** installed on the enumerator's Android device
+- SurveyCTO Collect **version 2.70.2 or higher** installed on the enumerator's Mobile device
 
 ### Installation
 
@@ -225,7 +225,7 @@ To edit the plug-in, unzip the file, make your changes, and re-zip all four file
 
 ## Limitations
 
-- **Android only.** Web forms block direct Exotel API calls due to browser CORS policy. The plug-in will not work on SurveyCTO web forms.
+- **Mobile only.** Web forms block direct Exotel API calls due to browser CORS policy. The plug-in will not work on SurveyCTO web forms.
 - **Indian phone numbers and Exotel India.** The plug-in hits `api.exotel.in`. If you use Exotel's Southeast Asia or other regional endpoints, update the URL in `script.js`.
 - **Credentials in form parameters.** API credentials are passed as appearance parameters. For production use, consider SurveyCTO server-managed parameters to avoid credentials appearing in the XLSForm file itself.
 - **No automatic trigger.** The enumerator must manually press the button. The plug-in does not auto-fetch on field load.
@@ -240,7 +240,7 @@ Pull requests are welcome. To contribute:
 1. Fork this repository
 2. Create a branch: `git checkout -b your-feature-name`
 3. Edit the source files inside the zip (unzip, edit, re-zip)
-4. Test on a real SurveyCTO form on Android before submitting
+4. Test on a real SurveyCTO form on Mobile before submitting
 5. Open a pull request with a clear description of what changed and why
 
 For bugs or feature requests, open an issue on GitHub.
